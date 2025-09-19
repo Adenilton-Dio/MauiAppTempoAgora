@@ -22,13 +22,16 @@ namespace MauiAppTempoAgora
 
                     if (t != null)
                     {
-                        string dados_previsao = 
-                            $"Latitude: {t.lat}\n" +
-                            $"Longitude: {t.lon}\n" +
-                            $"Nascer do Sol: {t.sunrise}\n" +
-                            $"Pôr do Sol: {t.sunset}\n" +
-                            $"Temp Máx: {t.temp_max}\n" +
-                            $"Temp Min: {t.temp_min}";
+                        string dados_previsao =
+                     $"Latitude: {t.lat}\n" +
+                     $"Longitude: {t.lon}\n" +
+                     $"Nascer do Sol: {t.sunrise}\n" +
+                     $"Pôr do Sol: {t.sunset}\n" +
+                     $"Temp Máx: {t.temp_max}°C\n" +
+                     $"Temp Min: {t.temp_min}°C\n" +
+                     $"Clima: {t.description}\n" +
+                     $"Vento: {t.speed} m/s\n" +
+                     $"Visibilidade: {t.visibility} metros";
 
                         lbl_res.Text = dados_previsao;
                     }
